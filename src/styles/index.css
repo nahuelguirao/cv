@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1d1c2e;
+  color: #F0F0F0;
+  font-family: 'Lato', sans-serif;
+}
+
+.animatedBackground {
+  position: fixed;
+  width: 100%;
+  z-index: -2;
+}
