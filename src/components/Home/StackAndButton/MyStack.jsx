@@ -8,10 +8,12 @@ import { DjangoDiv } from './TechnologiesDivs/DjangoDiv';
 import { AndMoreDiv } from './TechnologiesDivs/AndMoreDiv';
 
 
-export function MyStack() {
+export function MyStack({ translations }) {
     return (
         <>
-            <motion.h3 className='stackTitle' animate={{ scale: [0, 1] }} transition={{ delay: .7 }}>My <span className='fit'>stack</span></motion.h3>
+            <motion.h3 className='stackTitle' animate={{ scale: [0, 1] }} transition={{ delay: .7 }}>
+                {translations.my}<span className='fit'>{translations.stack}</span>
+            </motion.h3>
             <motion.div className='stack' animate={{ scale: [0, 1] }} transition={{ delay: .7 }}>
                 <HtmlDiv />
                 <CssDiv />
@@ -19,7 +21,7 @@ export function MyStack() {
                 <ReactDiv />
                 <PythonDiv />
                 <DjangoDiv />
-                <AndMoreDiv />
+                <AndMoreDiv andMore={translations.more} />
             </motion.div>
         </>
     )

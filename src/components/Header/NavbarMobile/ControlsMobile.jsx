@@ -2,6 +2,7 @@ import { IoMenuOutline } from "react-icons/io5";
 import { RxCross1 } from "react-icons/rx";
 
 export function ControlsMobile({ toggleMenu, isMenuOpen }) {
+
     return (
         <>
             {isMenuOpen ?

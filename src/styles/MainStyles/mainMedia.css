@@ -54,7 +54,6 @@
         column-gap: 2rem;
         row-gap: 1rem;
         font-weight: 300;
-        margin-bottom: 2rem;
         width: 110%;
     }
 
@@ -69,8 +68,36 @@
         font-size: 2rem;
     }
 
-    .buttonsContainerGeneral {
-        margin-top: 2rem;
+    .buttonContainer {
+        margin-top: -2rem;
+    }
+
+    .choseLanguage {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-right: .5rem;
+        top: 1%;
+        right: 2%;
+    }
+
+    .choseLanguage p {
+        margin-bottom: 1.2rem;
+        font-weight: 300;
+        font-size: 1rem;
+    }
+
+    .choseLanguageFlag {
+        width: 2.5rem;
+        cursor: pointer;
+        border-radius: 100vmax;
+    }
+
+    .choseLanguageText {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
     }
 }
 
@@ -119,7 +146,7 @@
     }
 
     .buttonContainer button {
-        margin-left: 0rem;
+        margin: 3rem 0 0 0;
         width: 20rem;
         font-size: 1rem;
     }

@@ -76,7 +76,7 @@ export function AnimatedBackground() {
                     type: "circle",
                 },
                 size: {
-                    value: { min: 1, max: 2 },
+                    value: { min: 1, max: 1 },
                 },
             },
             detectRetina: true,

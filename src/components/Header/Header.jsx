@@ -1,29 +1,37 @@
-import { useState } from "react";
+import React from "react";
+import { useToggleMenu } from "../../hooks/useToggleMenu";
+import navbarTranslations from "../../translations/navbarTranslation";
+import { LanguageContext } from "../../context/LanguageContext";
 import { ControlsMobile } from "./NavbarMobile/ControlsMobile";
 import { MobileMenu } from "./NavbarMobile/MobileMenu";
 import { motion } from 'framer-motion';
 import '../../styles/header.css';
 
 export function Header() {
-    const [isMenuOpen, setIsMenuOpen] = useState(false)
+    //Mobile navbar controls
+    const { isMenuOpen, toggleMenu } = useToggleMenu()
 
-    const toggleMenu = () => { setIsMenuOpen(!isMenuOpen) }
+    //Language context
+    const { language } = React.useContext(LanguageContext)
+    const translations = navbarTranslations[language]
 
     return (
         <>
             <motion.header animate={{ y: [-100, 0] }}>
                 <div className="headerDiv">
-                    <h2><span className='fit'>Nahuel</span> Guirao<span className='dot'>.</span></h2>
-                    {/* More than 768px Menu */}
+                    <h2>
+                        <span className='fit'>Nahuel</span> Guirao<span className='dot'>.</span>
+                    </h2>
+                    {/* More than 1000px Menu */}
                     <nav className="navbarNormal">
-                        <a href="#">Home</a>
-                        <a href="#">About me</a>
-                        <a href="#">Projects</a>
-                        <a href="#">Contact</a>
+                        <a href="#">{translations.home}</a>
+                        <a href="#">{translations.about}</a>
+                        <a href="#">{translations.projects}</a>
+                        <a href="#">{translations.contact}</a>
                     </nav>
                     <ControlsMobile toggleMenu={toggleMenu} isMenuOpen={isMenuOpen} />
                 </div>
-                <MobileMenu isMenuOpen={isMenuOpen} />
+                <MobileMenu isMenuOpen={isMenuOpen} translations={translations} />
             </motion.header >
         </>
     )

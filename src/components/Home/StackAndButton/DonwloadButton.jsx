@@ -1,12 +1,12 @@
 import { motion } from 'framer-motion'
 
-export function DownloadButton() {
+export function DownloadButton({ translations }) {
     return (
         <motion.button
             animate={{ scale: [0, 1] }}
             transition={{ delay: .7 }}
         >
-            Download CV
+            {translations.download}
         </motion.button>
     )
 }
