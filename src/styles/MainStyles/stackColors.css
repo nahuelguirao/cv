@@ -10,10 +10,18 @@
     color: #E8D44D;
 }
 
+.typeScript {
+    color: #2F74C0;
+}
+
 .react {
     color: #00D2F7;
 }
 
 .django {
     color: #32AC7B;
+}
+
+.git {
+    color: #E84D31;
 }

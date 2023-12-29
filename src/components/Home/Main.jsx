@@ -5,11 +5,12 @@ import { PresentationText } from "./PresentationText/PresentationText";
 import { ProfilePic } from "./ProfilePic/ProfilePic";
 import { ContainerStack } from "./StackAndButton/ContainerStack";
 import { AstronautImage } from "./AstronautImage";
+import { ControlsLanguage } from "./ControlsLanguage";
 import { motion } from 'framer-motion';
 import "../../styles/MainStyles/mainMobile.css";
 import "../../styles/MainStyles/mainMedia.css";
 import "../../styles/MainStyles/stackColors.css";
-import { ControlsLanguage } from "./ControlsLanguage";
+
 
 export function Main() {
     const { language, switchLanguage } = useContext(LanguageContext)

@@ -7,7 +7,7 @@ const mainTranslations = {
         stack: ' conocimientos',
         more: 'Y más!',
         download: 'Descargar CV',
-        switchLanguage: 'Cambiar idioma',
+        switchLanguage: 'Switch language',
     },
     en: {
         hi: 'Hi',
@@ -17,7 +17,7 @@ const mainTranslations = {
         stack: ' stack',
         more: 'And more!',
         download: 'Download CV',
-        switchLanguage: 'Switch language',
+        switchLanguage: 'Cambiar idioma',
     }
 }
 

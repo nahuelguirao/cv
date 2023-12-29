@@ -3,10 +3,9 @@ import { HtmlDiv } from './TechnologiesDivs/HtmlDiv';
 import { CssDiv } from './TechnologiesDivs/CssDiv';
 import { JsDiv } from './TechnologiesDivs/JsDiv';
 import { ReactDiv } from './TechnologiesDivs/ReactDiv';
-import { PythonDiv } from './TechnologiesDivs/PythonDiv';
+import { GitDiv } from './TechnologiesDivs/GitDiv';
 import { DjangoDiv } from './TechnologiesDivs/DjangoDiv';
 import { AndMoreDiv } from './TechnologiesDivs/AndMoreDiv';
-
 
 export function MyStack({ translations }) {
     return (
@@ -19,7 +18,7 @@ export function MyStack({ translations }) {
                 <CssDiv />
                 <JsDiv />
                 <ReactDiv />
-                <PythonDiv />
+                <GitDiv />
                 <DjangoDiv />
                 <AndMoreDiv andMore={translations.more} />
             </motion.div>

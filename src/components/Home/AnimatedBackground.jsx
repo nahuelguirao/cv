@@ -24,7 +24,6 @@ export function AnimatedBackground() {
             interactivity: {
                 events: {
                     onClick: {
-                        enable: true,
                         mode: "push",
                     },
                     onHover: {
@@ -67,7 +66,7 @@ export function AnimatedBackground() {
                     density: {
                         enable: true,
                     },
-                    value: 80,
+                    value: 150,
                 },
                 opacity: {
                     value: 0.5,

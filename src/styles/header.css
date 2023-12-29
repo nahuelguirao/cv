@@ -3,19 +3,21 @@ header {
     top: 0;
     z-index: 2;
     user-select: none;
-    height: 10vh;
+    height: 7.5vh;
     background-color: #31304D;
-    border-bottom: 1px solid #b0afcd;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    border-bottom: 1px solid #b0afcd;
 }
 
 header h2 {
     font-size: 1.8rem;
     display: inline;
     padding-left: 1rem;
+    margin: 0;
 }
 
 .headerDiv {
+    padding: 1rem 0;
     background-color: #31304D;
     display: flex;
     justify-content: space-between;
@@ -34,7 +36,7 @@ header h2 {
 
 .menuIcon {
     font-size: 2rem;
-    padding-right: 1rem;
+    margin-right: 1rem;
     cursor: pointer;
 }
 
@@ -70,6 +72,10 @@ header h2 {
     header {
         padding: .5rem 2.5rem;
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    .headerDiv {
+        background-color: transparent;
     }
 
     .menuIcon {

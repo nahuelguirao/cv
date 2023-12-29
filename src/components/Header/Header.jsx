@@ -17,7 +17,7 @@ export function Header() {
 
     return (
         <>
-            <motion.header animate={{ y: [-100, 0] }}>
+            <motion.header animate={{ opacity: [0, 1] }}>
                 <div className="headerDiv">
                     <h2>
                         <span className='fit'>Nahuel</span> Guirao<span className='dot'>.</span>

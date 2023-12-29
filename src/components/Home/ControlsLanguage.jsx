@@ -6,9 +6,9 @@ export function ControlsLanguage({ translations, switchLanguage, actualLanguage 
     return (
         <motion.div className="choseLanguage" animate={{ x: [200, 0] }} transition={{ delay: .7 }}>
             <div className="choseLanguageText">
-                <p>
+                <motion.p whileTap={{ x: 5 }}>
                     {translations.switchLanguage}
-                </p>
+                </motion.p>
                 <motion.div whileTap={{ x: 5 }}>
                     <FaArrowRightLong />
                 </motion.div>

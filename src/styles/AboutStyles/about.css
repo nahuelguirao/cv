@@ -1,0 +1,168 @@
+.aboutSection {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.aboutSectionContainer {
+    overflow: hidden;
+    user-select: none;
+    background-color: #31304D;
+    border-radius: 3rem 1rem;
+    width: 80%;
+    position: relative;
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.aboutTitle {
+    font-size: 2.5rem;
+    padding: 2rem;
+    margin: 0;
+}
+
+.bottomBorder {
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #BEBDBD;
+}
+
+.aboutTextContainer {
+    padding: 0 2rem 2rem;
+    text-align: start;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    position: relative;
+    z-index: 2;
+}
+
+.paragraphHeadlineContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.paragraphTitle {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.paragraphControl {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #BEBDBD;
+}
+
+.technologies {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.aboutTech {
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.techParagraph {
+    display: none;
+}
+
+.cat {
+    display: none;
+}
+
+@media(min-width: 768px) {
+    .aboutSectionContainer {
+        width: 90%;
+        padding: 2rem 0;
+    }
+
+    .aboutTitle {
+        padding: 1rem 4rem;
+        font-size: 4rem;
+    }
+
+    .bottomBorder {
+        padding-bottom: 0;
+        border-bottom: none;
+    }
+
+    .aboutTextContainer {
+        padding: 1rem 4rem;
+    }
+
+    .paragraphTitle {
+        font-size: 1.5rem;
+    }
+
+    .paragraphHeadlineContainer {
+        justify-content: start;
+        gap: 2rem;
+    }
+
+    .paragraphInfo {
+        font-size: 1.3rem;
+        position: relative;
+        z-index: 1;
+    }
+
+    .paragraphControl {
+        display: none;
+    }
+
+    .aboutTech {
+        font-size: 3rem;
+    }
+
+    .technologies {
+        gap: 2rem;
+        width: 70%;
+    }
+
+    .techParagraph {
+        font-size: 1rem;
+        display: block;
+    }
+
+    .cat {
+        display: block;
+        position: absolute;
+        bottom: -13rem;
+        right: -8rem;
+        filter: brightness(80%);
+        opacity: .8;
+        z-index: 1;
+    }
+}
+
+@media(min-width:1087px) {
+    .technologies {
+        width: 90%;
+    }
+
+    .aboutTextContainer {
+        gap: 2rem;
+    }
+
+    .cat {
+        bottom: -14rem;
+    }
+}
+
+@media(min-width:1200px) {
+    .cat {
+        width: 25rem;
+        right: -5rem;
+        bottom: -13.5rem;
+    }
+}
