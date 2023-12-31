@@ -51,6 +51,10 @@
     margin: 0;
 }
 
+.paragraphInfo {
+    text-align: justify;
+}
+
 .paragraphControl {
     font-size: 1.5rem;
     cursor: pointer;
@@ -164,5 +168,20 @@
         width: 25rem;
         right: -5rem;
         bottom: -13.5rem;
+    }
+}
+
+
+.liveSpan {
+    animation: liveAnimation 1s linear infinite alternate;
+}
+
+@keyframes liveAnimation {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1;
     }
 }

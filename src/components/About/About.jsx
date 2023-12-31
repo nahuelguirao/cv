@@ -20,13 +20,12 @@ export function About() {
         <section className="aboutSection">
             <motion.div
                 className='aboutSectionContainer'
-                whileInView={{ x: [-100, 0], opacity: [0, 1] }} transition={{ duration: .8 }}
-                viewport={{
-                    once: true
-                }}
+                whileInView={{ x: [-100, 0], opacity: [0, 1] }}
+                transition={{ duration: .6 }}
+                viewport={{ once: true }}
             >
                 <motion.h1 className='aboutTitle' whileInView={{ opacity: [0, 1] }}>
-                    <span className='fit'>{translations.about}</span>{translations.me}<span className='dot'>.</span>
+                    <span className='fit'>{translations.about}</span>{translations.me}<span className='dot liveSpan'>.</span>
                 </motion.h1>
                 <div className='aboutTextContainer'>
                     <Who paragrapshOpen={paragrapshOpen} isParagraphOpen={isParagraphOpen} toggleParagraph={toggleParagraph} translations={translations} />

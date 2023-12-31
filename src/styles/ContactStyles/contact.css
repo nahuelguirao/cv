@@ -1,0 +1,131 @@
+.contactSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.contactSectionContainer {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    user-select: none;
+    border-radius: 3rem 1rem;
+    width: 80%;
+    background-color: #31304D;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.contactSectionContainer h1 {
+    font-size: 2.5rem;
+    padding: 2rem 2rem 1rem;
+    margin: 0;
+}
+
+.contactInfoContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 0 2rem 2rem;
+}
+
+.containerIndividualInfo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px;
+}
+
+.containerIndividualInfo p {
+    font-size: .8rem;
+    font-weight: 500;
+    color: white;
+}
+
+.contactIcon {
+    font-size: 2rem;
+    color: #BEBDBD;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.contactIcon:hover {
+    scale: 1.2;
+    color: white;
+}
+
+.pRedirect {
+    font-weight: 300;
+}
+
+.contactImg {
+    display: none;
+}
+
+@media(min-width:655px) {
+    .contactImg {
+        display: block;
+        position: absolute;
+        right: -220px;
+        bottom: 0;
+        filter: brightness(80%);
+        opacity: .8;
+    }
+}
+
+@media(min-width:768px) {
+    .contactSection {
+        margin-top: 10rem;
+    }
+
+    .contactSectionContainer {
+        width: 90%;
+    }
+
+    .contactSectionContainer h1 {
+        padding: 2rem 4rem 1rem;
+        font-size: 4rem;
+    }
+
+    .contactInfoContainer {
+        padding: 1rem 4rem;
+    }
+
+    .containerIndividualInfo {
+        gap: 32px;
+    }
+
+    .contactIcon {
+        font-size: 3rem;
+        color: #BEBDBD;
+    }
+
+    .containerIndividualInfo p {
+        font-size: 1.25rem;
+    }
+
+    .contactImg {
+        right: -150px;
+        bottom: -10px;
+
+    }
+}
+
+@media(min-width:1100px) {
+    .contactImg {
+        height: 550px;
+    }
+}
+
+@media(min-width:1400px) {
+    .contactInfoContainer {
+        width: 70%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contactImg {
+        bottom: -100px;
+        height: 500px;
+    }
+}

@@ -7,6 +7,7 @@ export async function downloadCv() {
         const url = window.URL.createObjectURL(new Blob([blob]));
         const link = document.createElement('a');
         link.href = url;
+        // Sets the download
         link.setAttribute('download', 'GuiraoNahuelCV.pdf');
         document.body.appendChild(link);
         link.click();

@@ -36,7 +36,7 @@ export function SoftSkills({ paragrapshOpen, isParagraphOpen, toggleParagraph, t
                             initial={{ y: -10, opacity: 0 }}
                             animate={{ y: 0, opacity: 1 }}
                             exit={{ y: -10, opacity: 0 }}
-                            key={'paragraph-3'}
+                            key={'paragraph-4'}
                         >
                             {translations.thirdPtwo}
                         </motion.p>

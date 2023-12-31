@@ -20,7 +20,7 @@ export function Header() {
             <motion.header animate={{ opacity: [0, 1] }}>
                 <div className="headerDiv">
                     <h2>
-                        <span className='fit'>Nahuel</span> Guirao<span className='dot'>.</span>
+                        <span className='fit'>Nahuel</span> Guirao<span className='dot liveSpan'>.</span>
                     </h2>
                     {/* More than 1000px Menu */}
                     <nav className="navbarNormal">
