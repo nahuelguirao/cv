@@ -1,13 +1,13 @@
-import { motion, AnimatePresence } from 'framer-motion'
-import { GoTriangleDown } from "react-icons/go";
-import { GoTriangleUp } from "react-icons/go";
+import { motion, AnimatePresence } from 'framer-motion';
+import { GoTriangleDown, GoTriangleUp } from "react-icons/go";
+import { MdOutlineConnectWithoutContact } from "react-icons/md";
 
 export function SoftSkills({ paragrapshOpen, isParagraphOpen, toggleParagraph, translations }) {
     return (
         <div className='aboutParagraph bottomBorder'>
             <div className='paragraphHeadlineContainer'>
                 <motion.p className='paragraphTitle' whileInView={{ scale: [0, 1] }}>
-                    {translations.softSkills}
+                    <MdOutlineConnectWithoutContact className='paragraphIcon' />{translations.softSkills}
                 </motion.p>
                 {isParagraphOpen(3) ? (
                     <motion.div whileTap={{ scale: 2 }}>

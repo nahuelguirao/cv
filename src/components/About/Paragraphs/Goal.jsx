@@ -1,13 +1,12 @@
-import { motion, AnimatePresence } from 'framer-motion'
-import { GoTriangleDown } from "react-icons/go";
-import { GoTriangleUp } from "react-icons/go";
+import { motion, AnimatePresence } from 'framer-motion';
+import { GoTriangleDown, GoTriangleUp, GoGoal } from "react-icons/go";
 
 export function Goal({ paragrapshOpen, isParagraphOpen, toggleParagraph, translations }) {
     return (
         <div className='aboutParagraph bottomBorder'>
             <div className='paragraphHeadlineContainer'>
                 <motion.p className='paragraphTitle' whileInView={{ scale: [0, 1] }}>
-                    {translations.goal}
+                    <GoGoal className='paragraphIcon' />{translations.goal}
                 </motion.p>
                 {isParagraphOpen(2) ? (
                     <motion.div whileTap={{ scale: 2 }}>

@@ -1,13 +1,13 @@
-import { motion, AnimatePresence } from 'framer-motion'
-import { GoTriangleDown } from "react-icons/go";
-import { GoTriangleUp } from "react-icons/go";
+import { motion, AnimatePresence } from 'framer-motion';
+import { GoTriangleDown, GoTriangleUp } from "react-icons/go";
+import { BsPersonCircle } from "react-icons/bs";
 
 export function Who({ paragrapshOpen, isParagraphOpen, toggleParagraph, translations }) {
     return (
         <div className='aboutParagraph bottomBorder'>
             <div className='paragraphHeadlineContainer'>
                 <motion.p className='paragraphTitle' whileInView={{ scale: [0, 1] }}>
-                    {translations.whoIam}
+                    <BsPersonCircle className='paragraphIcon' />{translations.whoIam}
                 </motion.p>
                 <div>
                     {isParagraphOpen(1) ? (

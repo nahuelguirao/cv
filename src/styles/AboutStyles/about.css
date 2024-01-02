@@ -49,13 +49,21 @@
     font-size: 1.1rem;
     font-weight: 500;
     margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.paragraphIcon {
+    margin-right: 1rem;
 }
 
 .paragraphInfo {
-    text-align: justify;
+    text-align: start;
+    color: #d3d3d3;
 }
 
 .paragraphControl {
+    margin-left: 16px;
     font-size: 1.5rem;
     cursor: pointer;
     color: #BEBDBD;

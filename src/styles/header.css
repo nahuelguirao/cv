@@ -85,6 +85,7 @@ header h2 {
     .navbarNormal {
         display: flex;
         gap: 2rem;
+        animation: fadeInAnchor 500ms;
     }
 
     .navbarNormal a {
@@ -101,5 +102,15 @@ header h2 {
         color: #31304D;
         transform: scale(1.1);
         transition: .5s;
+    }
+}
+
+@keyframes fadeInAnchor {
+    from {
+        transform: scaleY(0);
+    }
+
+    to {
+        transform: scaleY(100px);
     }
 }

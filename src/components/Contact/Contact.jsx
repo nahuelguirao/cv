@@ -30,7 +30,7 @@ export function Contact() {
                     <ContactGithub />
                     <p className="pRedirect">{translation.message}</p>
                 </div>
-                <img className="contactImg" src="/astronaut_with_phone.png" />
+                <motion.img className="contactImg" src="/astronaut_contact.png" whileInView={{ scale: [0, 1] }} viewport={{ once: true }} transition={{ duration: .5 }} />
             </motion.div>
         </section >
     )

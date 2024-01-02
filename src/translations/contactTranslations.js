@@ -1,7 +1,7 @@
 const contactTranslations = {
     es: {
-        firstWord: '',
-        secondWord: 'Contactémonos!',
+        firstWord: 'Mi ',
+        secondWord: 'Contacto!',
         message: 'Haz clic en un icono para redirigir!',
     },
     en: {
