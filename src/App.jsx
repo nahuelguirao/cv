@@ -3,6 +3,7 @@ import { Header } from "./components/Header/Header";
 import { Main } from "./components/Home/Main";
 import { About } from './components/About/About';
 import { Contact } from './components/Contact/Contact';
+import { Footer } from './components/Footer/Footer';
 
 export function App() {
   return (
@@ -12,6 +13,7 @@ export function App() {
       <Main />
       <About />
       <Contact />
+      <Footer />
     </>
   )
 }

@@ -13,3 +13,19 @@ body {
   width: 100%;
   z-index: -2;
 }
+
+/* Scroll bar styles */
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: #31304D;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #B0AFCD;
+  border-radius: 100vmax;
+}
+
+::-moz-scrollbar {
+  width: 12px;
+  color: #31304D;
+}
