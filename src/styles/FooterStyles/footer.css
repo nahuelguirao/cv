@@ -1,7 +1,7 @@
 footer {
     overflow: hidden;
-    background-color: #31304D;
-    border-top: 1px solid #B0AFCD;
+    background-color: #312107;
+    border-top: 1px solid rgba(255, 254, 242, 0.692);
     margin-top: 100px;
     position: relative;
     z-index: 1;
@@ -23,8 +23,7 @@ footer h4 {
 
 .footerLinksContainer a {
     text-decoration: underline;
-    text-decoration-color: #B0AFCD;
-    color: white;
+    color: rgba(255, 254, 242, 0.692);
     font-weight: 300;
 }
 

@@ -3,7 +3,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #1d1c2e;
+  background-color: #000000;
   color: #F0F0F0;
   font-family: 'Lato', sans-serif;
 }
@@ -17,15 +17,15 @@ body {
 /* Scroll bar styles */
 ::-webkit-scrollbar {
   width: 12px;
-  background-color: #31304D;
+  background-color: #885b14;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #B0AFCD;
+  background-color: #312107;
   border-radius: 100vmax;
 }
 
 ::-moz-scrollbar {
   width: 12px;
-  color: #31304D;
+  color: #885b14;
 }

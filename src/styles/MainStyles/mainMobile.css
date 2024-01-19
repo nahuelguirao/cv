@@ -13,7 +13,8 @@ main {
 .presentation {
     overflow: hidden;
     user-select: none;
-    background-color: #31304D;
+    background-color: #312107;
+    border: solid 1px rgba(255, 254, 242, 0.692);
     border-radius: 3rem 1rem;
     width: 80%;
     position: relative;
@@ -55,7 +56,7 @@ main {
 
 .socialMedia a {
     text-decoration: none;
-    color: rgba(255, 254, 242, 0.692);
+    color: rgba(255, 254, 242, 0.466);
 }
 
 .profilePic {
@@ -92,7 +93,7 @@ main {
 }
 
 .buttonsContainerGeneral button:hover {
-    background-color: red;
+    background-color: #F5A524;
     color: white;
     transition: .3s;
 }

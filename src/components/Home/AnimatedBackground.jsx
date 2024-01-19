@@ -43,14 +43,14 @@ export function AnimatedBackground() {
             },
             particles: {
                 color: {
-                    value: "rgba(255, 255, 255, 0.253)",
+                    value: "#F5A524",
                 },
                 links: {
-                    color: "rgba(255, 255, 255, 0.253)",
+                    color: "#F5A524",
                     distance: 150,
                     enable: true,
                     opacity: 0.5,
-                    width: .5,
+                    width: .75,
                 },
                 move: {
                     direction: "none",
