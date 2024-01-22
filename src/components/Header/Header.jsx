@@ -4,6 +4,7 @@ import navbarTranslations from "../../translations/navbarTranslation";
 import { LanguageContext } from "../../context/LanguageContext";
 import { ControlsMobile } from "./NavbarMobile/ControlsMobile";
 import { MobileMenu } from "./NavbarMobile/MobileMenu";
+import { scrollToSomewhere } from "../../helpers/scrollTo";
 import { motion } from 'framer-motion';
 import '../../styles/header.css';
 
@@ -15,6 +16,9 @@ export function Header() {
     const { language } = React.useContext(LanguageContext)
     const translations = navbarTranslations[language]
 
+    //Scrolls
+    const { scrollToHome, scrollToAbout, scrollToProjects, scrollToContact } = scrollToSomewhere()
+
     return (
         <>
             <motion.header animate={{ opacity: [0, 1] }}>
@@ -24,14 +28,14 @@ export function Header() {
                     </h2>
                     {/* More than 1000px Menu */}
                     <nav className="navbarNormal">
-                        <a href="#">{translations.home}</a>
-                        <a href="#">{translations.about}</a>
-                        <a href="#">{translations.projects}</a>
-                        <a href="#">{translations.contact}</a>
+                        <a onClick={scrollToHome}>{translations.home}</a>
+                        <a onClick={scrollToAbout}>{translations.about}</a>
+                        <a onClick={scrollToProjects}>{translations.projects}</a>
+                        <a onClick={scrollToContact}>{translations.contact}</a>
                     </nav>
                     <ControlsMobile toggleMenu={toggleMenu} isMenuOpen={isMenuOpen} />
                 </div>
-                <MobileMenu isMenuOpen={isMenuOpen} translations={translations} />
+                <MobileMenu isMenuOpen={isMenuOpen} translations={translations} toggleMenu={toggleMenu} />
             </motion.header >
         </>
     )

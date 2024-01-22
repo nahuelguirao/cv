@@ -5,7 +5,7 @@ export function ContactGmail() {
     return (
         <div className='containerIndividualInfo'>
             <motion.div whileInView={{ scale: [0, 1] }}>
-                <CgMail className="contactIcon" />
+                <a href="mailto:nahuelguirao2@gmail.com"><CgMail className="contactIcon" /></a>
             </motion.div>
             <motion.p whileInView={{ scale: [0, 1] }} viewport={{ once: true }}>
                 nahuelguirao2@gmail.com

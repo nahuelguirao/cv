@@ -6,6 +6,7 @@ body {
   background-color: #000000;
   color: #F0F0F0;
   font-family: 'Lato', sans-serif;
+  scroll-behavior: smooth;
 }
 
 .animatedBackground {
