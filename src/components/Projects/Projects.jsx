@@ -1,11 +1,11 @@
 import { FaGithub } from "react-icons/fa";
 import { RiLiveFill } from "react-icons/ri";
 import { motion } from 'framer-motion'
-import '../../styles/ProjectsStyles/projects.css'
+import '../../styles/ProjectsStyles/projects.scss'
 
 export function Projects() {
     return (
-        <section className="projectsSection">
+        <motion.section className="projectsSection" whileInView={{ x: [100, 0] }} viewport={{ once: true }} transition={{ duration: .6 }}>
             <motion.h1 whileInView={{ opacity: [0, 1] }}>Mis proyectos <span className='liveSpan dot'>.</span></motion.h1>
             <motion.p whileInView={{ opacity: [0, 1] }}>*Click en una imagen para mas info!</motion.p>
             <div className='projectsContainer'>
@@ -26,6 +26,6 @@ export function Projects() {
                     <img src='ProjectsImg/Taskly.png' alt="Taskly image" />
                 </article>
             </div >
-        </section >
+        </motion.section>
     )
 }

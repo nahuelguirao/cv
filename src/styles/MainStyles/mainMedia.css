@@ -1,154 +1,153 @@
-@media (min-width:768px) {
-    .presentation {
-        width: 90%;
-    }
+@media (min-width: 768px) {
+  .presentation {
+    width: 90%;
+  }
 
-    .allDivsContainer {
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-    }
+  .allDivsContainer {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
 
-    .presentation .text {
-        grid-column: span 2;
-        padding: 0 4rem;
-    }
+  .presentation .text {
+    grid-column: span 2;
+    padding: 0 4rem;
+  }
 
-    .text .mainText {
-        font-size: 2.5rem;
-    }
+  .text .mainText {
+    font-size: 2.5rem;
+  }
 
-    .text .animatedText {
-        font-size: 1.5rem;
-    }
+  .text .animatedText {
+    font-size: 1.5rem;
+  }
 
-    .profilePicContainer {
-        margin-top: 2rem;
-        gap: 1rem;
-        justify-self: flex-start;
-        padding-left: 4rem;
-        margin-right: 2rem;
-    }
+  .profilePicContainer {
+    margin-top: 2rem;
+    gap: 1rem;
+    justify-self: flex-start;
+    padding-left: 4rem;
+    margin-right: 2rem;
+  }
 
-    .profilePicContainer a {
-        font-size: 3rem;
-    }
+  .profilePicContainer a {
+    font-size: 3rem;
+  }
 
-    .profilePic {
-        width: 15rem;
-        max-width: 100rem;
-    }
+  .profilePic {
+    width: 15rem;
+    max-width: 100rem;
+  }
 
-    .stackTitle {
-        display: block;
-        margin: 0;
-        padding-bottom: 1rem;
-        margin-bottom: 1rem;
-        font-size: 1.5rem;
-        font-weight: 500;
-    }
+  .stackTitle {
+    display: block;
+    margin: 0;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
 
-    .stack {
-        display: flex;
-        justify-content: flex-start;
-        flex-wrap: wrap;
-        column-gap: 2rem;
-        row-gap: 1rem;
-        font-weight: 300;
-        width: 110%;
-    }
+  .stack {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+    row-gap: 1rem;
+    font-weight: 300;
+    width: 110%;
+  }
 
-    .stack div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
+  .stack div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
-    .stack .iconStack {
-        font-size: 2rem;
-    }
+  .stack .iconStack {
+    font-size: 2rem;
+  }
 
-    .buttonContainer {
-        margin-top: -2rem;
-    }
+  .buttonContainer {
+    margin-top: -2rem;
+  }
 
-    .choseLanguage {
-        position: absolute;
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-        margin-right: .5rem;
-        top: 1%;
-        right: 2%;
-    }
+  .choseLanguage {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-right: 0.5rem;
+    top: 1%;
+    right: 2%;
+  }
 
-    .choseLanguage p {
-        margin-bottom: 1.2rem;
-        font-weight: 300;
-        font-size: 1rem;
-    }
+  .choseLanguage p {
+    margin-bottom: 1.2rem;
+    font-weight: 300;
+    font-size: 1rem;
+  }
 
-    .choseLanguageFlag {
-        width: 2.5rem;
-        cursor: pointer;
-        border-radius: 100vmax;
-    }
+  .choseLanguageFlag {
+    width: 2.5rem;
+    cursor: pointer;
+    border-radius: 100vmax;
+  }
 
-    .choseLanguageText {
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-    }
+  .choseLanguageText {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
 }
 
-@media(min-width:999px) {
-    .stackTitle {
-        font-size: 2.5rem;
-    }
+@media (min-width: 999px) {
+  .stackTitle {
+    font-size: 2.5rem;
+  }
 
-    .stack .iconStack {
-        font-size: 3.5rem;
-    }
+  .stack .iconStack {
+    font-size: 3.5rem;
+  }
 }
 
-@media(min-width:1310px) {
-    .buttonsContainerGeneral {
-        margin-top: -5rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        gap: 0;
-        width: 100%;
-    }
+@media (min-width: 1310px) {
+  .buttonsContainerGeneral {
+    margin-top: -5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 0;
+    width: 100%;
+  }
 
-    .stackTitle {
-        font-size: 3rem;
-    }
+  .stackTitle {
+    font-size: 3rem;
+  }
 
-    .stack {
-        margin-bottom: 0;
-    }
+  .stack {
+    margin-bottom: 0;
+  }
 
-    .stack .iconStack {
-        font-size: 4rem;
-    }
+  .stack .iconStack {
+    font-size: 4rem;
+  }
 
-    .astronautImage {
-        display: block;
-        position: absolute;
-        z-index: -1;
-        right: 20%;
-        bottom: -12%;
-        width: 150px;
-        filter: brightness(70%);
-        opacity: .8;
-        rotate: -5deg;
-    }
+  .astronautImage {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    right: 20%;
+    bottom: -12%;
+    width: 150px;
+    filter: brightness(70%);
+    opacity: 0.8;
+    rotate: -5deg;
+  }
 
-    .buttonContainer button {
-        margin: 3rem 0 0 0;
-        width: 20rem;
-        font-size: 1rem;
-    }
-
+  .buttonContainer button {
+    margin: 3rem 0 0 0;
+    width: 20rem;
+    font-size: 1rem;
+  }
 }

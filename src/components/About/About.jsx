@@ -8,7 +8,7 @@ import { SoftSkills } from "./Paragraphs/SoftSkills";
 import { TechSkills } from "./Paragraphs/TechSkills/TechSkills";
 import { CatImage } from './Paragraphs/CatImage';
 import { motion } from 'framer-motion';
-import '../../styles/AboutStyles/about.css';
+import '../../styles/AboutStyles/about.scss';
 
 export function About() {
     const { paragrapshOpen, toggleParagraph, isParagraphOpen } = useAccordion()

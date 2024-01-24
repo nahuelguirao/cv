@@ -6,7 +6,7 @@ import { ControlsMobile } from "./NavbarMobile/ControlsMobile";
 import { MobileMenu } from "./NavbarMobile/MobileMenu";
 import { scrollToSomewhere } from "../../helpers/scrollTo";
 import { motion } from 'framer-motion';
-import '../../styles/header.css';
+import '../../styles/header.scss';
 
 export function Header() {
     //Mobile navbar controls

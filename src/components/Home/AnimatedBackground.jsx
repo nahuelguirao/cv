@@ -43,10 +43,10 @@ export function AnimatedBackground() {
             },
             particles: {
                 color: {
-                    value: "#F5A524",
+                    value: "#F0ECE5",
                 },
                 links: {
-                    color: "#F5A524",
+                    color: "#F0ECE5",
                     distance: 150,
                     enable: true,
                     opacity: 0.5,

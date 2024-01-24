@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+
+$primaryColor: #161a30;
+$secondaryColor: #31304d;
+$bordersColor: #f0ece5;
+$redDetails: red;
+$unactiveLink: #f0f0f09c;
+$paragraphColor: #d3d3d3;
+$htmlColor: #de4b25;
+$cssColor: #0091d5;
+$jsColor: #e8d44d;
+$tsColor: #2f74c0;
+$reactColor: #00d2f7;
+$djangoColor: #32ac7b;
+$gitColor: #e84d31;
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $primaryColor;
+  color: $bordersColor;
+  font-family: "Lato", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.animatedBackground {
+  position: fixed;
+  width: 100%;
+  z-index: -2;
+}
+
+/* Scroll bar styles */
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: $primaryColor;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $secondaryColor;
+  border-radius: 100vmax;
+}
+
+::-moz-scrollbar {
+  width: 12px;
+  color: $secondaryColor;
+}

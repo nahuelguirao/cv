@@ -1,0 +1,115 @@
+@import "index";
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  user-select: none;
+  height: 7.5vh;
+  background-color: $secondaryColor;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+header h2 {
+  font-size: 1.8rem;
+  display: inline;
+  padding-left: 1rem;
+  margin: 0;
+}
+
+.headerDiv {
+  padding: 1rem 0;
+  background-color: $secondaryColor;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.fit {
+  font-weight: 300;
+}
+
+.dot {
+  color: $redDetails;
+}
+
+.menuIcon {
+  font-size: 2rem;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.menuIcon:hover {
+  transform: scale(1.3);
+  transition: 0.3s;
+}
+
+.navbarMobile {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  background-color: $secondaryColor;
+  padding: 1rem 0;
+  border-bottom: 1px solid $bordersColor;
+}
+
+.navbarNormal {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  header {
+    padding: 0.5rem 2.5rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-bottom: 1px solid $bordersColor;
+    border-bottom-left-radius: 32px;
+    border-bottom-right-radius: 32px;
+  }
+
+  .headerDiv {
+    background-color: transparent;
+  }
+
+  .menuIcon {
+    display: none;
+  }
+
+  .navbarNormal {
+    display: flex;
+    gap: 2rem;
+    animation: fadeInAnchor 500ms;
+  }
+
+  .navbarNormal a {
+    cursor: pointer;
+    color: $bordersColor;
+    text-decoration: none;
+    padding: 0.5rem;
+    border-radius: 100vmax;
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
+
+  .navbarNormal a:hover {
+    background-color: rgba(0, 0, 0, 0.432);
+    color: $bordersColor;
+    transform: scale(1.1);
+    transition: 0.5s;
+  }
+}
+
+@keyframes fadeInAnchor {
+  from {
+    transform: scaleY(0);
+  }
+
+  to {
+    transform: scaleY(100px);
+  }
+}

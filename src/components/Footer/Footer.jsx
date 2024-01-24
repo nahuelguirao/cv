@@ -1,6 +1,6 @@
 import { scrollToSomewhere } from '../../helpers/scrollTo'
 import { motion } from 'framer-motion'
-import '../../styles/FooterStyles/footer.css'
+import '../../styles/FooterStyles/footer.scss'
 
 export function Footer() {
     //Scrolls

@@ -7,9 +7,8 @@ import { ContainerStack } from "./StackAndButton/ContainerStack";
 import { AstronautImage } from "./AstronautImage";
 import { ControlsLanguage } from "./ControlsLanguage";
 import { motion } from 'framer-motion';
-import "../../styles/MainStyles/mainMobile.css";
+import "../../styles/MainStyles/mainMobile.scss";
 import "../../styles/MainStyles/mainMedia.css";
-import "../../styles/MainStyles/stackColors.css";
 
 
 export function Main() {

@@ -6,7 +6,7 @@ import { ContactPhone } from "./Containers/ContactPhone";
 import { ContactLinkedin } from "./Containers/ContactLinkedin";
 import { ContactGithub } from "./Containers/ContactGithub";
 import { motion } from 'framer-motion';
-import '../../styles/ContactStyles/contact.css';
+import '../../styles/ContactStyles/contact.scss';
 
 export function Contact() {
     const { language } = useContext(LanguageContext)

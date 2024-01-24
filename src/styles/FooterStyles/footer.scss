@@ -1,0 +1,50 @@
+@import "../index.scss";
+
+footer {
+  overflow: hidden;
+  background-color: $secondaryColor;
+  border-top: 1px solid $bordersColor;
+  margin-top: 100px;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 16px 0;
+}
+
+footer h4 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.footerLinksContainer {
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.footerLinksContainer a {
+  cursor: pointer;
+  color: $unactiveLink;
+  font-weight: 300;
+  transition: 200ms;
+}
+
+.footerLinksContainer a:hover {
+  color: $bordersColor;
+}
+
+@media (min-width: 768px) {
+  footer h4 {
+    margin-top: 16px;
+    font-size: 1.5rem;
+  }
+
+  .footerLinksContainer {
+    gap: 50px;
+  }
+
+  .footerLinksContainer a {
+    font-size: 1.2rem;
+  }
+}
