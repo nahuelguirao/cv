@@ -60,7 +60,7 @@ main {
 
 .socialMedia a {
   text-decoration: none;
-  color: rgba(255, 254, 242, 0.466);
+  color: $unactiveLink;
 }
 
 .profilePic {
@@ -68,7 +68,7 @@ main {
   max-width: 15rem;
   border-radius: 3rem 1rem;
   filter: brightness(90%);
-  border: solid 3px rgba(255, 254, 242, 0.466);
+  border: solid 3px $bordersColor;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
@@ -83,7 +83,7 @@ main {
   border: none;
   border-radius: 100vmax;
   padding: 0.5rem 0.25rem;
-  background-color: $activeLink;
+  background-color: $bordersColor;
   color: rgba(0, 0, 0, 0.726);
   border: 1px solid transparent;
   font-family: "Lato", sans-serif;

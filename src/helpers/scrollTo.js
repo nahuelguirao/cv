@@ -13,6 +13,11 @@ export function scrollToSomewhere() {
                 top: 743,
                 behavior: 'smooth'
             })
+        } else if (window.innerWidth < 768) {
+            window.scrollTo({
+                top: 754,
+                behavior: 'smooth'
+            })
         } else {
             window.scrollTo({
                 top: 850,
@@ -22,42 +27,63 @@ export function scrollToSomewhere() {
     }
 
     const scrollToProjects = () => {
-        if (window.innerWidth >= 768 && window.innerWidth <= 1000) {
+        if (window.innerWidth <= 320) {
             window.scrollTo({
-                top: 2090,
+                top: 2095,
+                behavior: 'smooth'
+            })
+        } else if (window.innerWidth <= 390) {
+            window.scrollTo({
+                top: 2031,
+                behavior: 'smooth'
+            })
+        } else if (window.innerWidth <= 520) {
+            window.scrollTo({
+                top: 1901,
                 behavior: 'smooth'
             })
         } else if (window.innerWidth < 768) {
             window.scrollTo({
-                top: 1996,
+                top: 1748,
                 behavior: 'smooth'
             })
-        }
-        else {
+        } else if (window.innerWidth <= 950) {
             window.scrollTo({
-                top: 1700,
+                top: 2077,
                 behavior: 'smooth'
             })
-        }
-    }
-
-    const scrollToContact = () => {
-        if (window.innerWidth >= 768 && window.innerWidth <= 1000) {
+        } else if (window.innerWidth < 1087) {
             window.scrollTo({
-                top: 2890,
-                behavior: 'smooth'
-            })
-        } else if (window.innerWidth < 768) {
-            window.scrollTo({
-                top: 2725,
+                top: 1944,
                 behavior: 'smooth'
             })
         } else {
             window.scrollTo({
-                top: 2375,
+                top: 1748,
                 behavior: 'smooth'
             })
         }
+
+
+        //     if (window.innerWidth >= 768 && window.innerWidth <= 1000) {
+        //         window.scrollTo({
+        //             top: 2061,
+        //             behavior: 'smooth'
+        //         })
+        //     } else 
+        //     else {
+        //     window.scrollTo({
+        //         top: 1750,
+        //         behavior: 'smooth'
+        //     })
+        // }
+    }
+
+    const scrollToContact = () => {
+        window.scrollTo({
+            top: 4170,
+            behavior: 'smooth'
+        })
     }
 
     return { scrollToHome, scrollToAbout, scrollToProjects, scrollToContact }

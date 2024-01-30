@@ -1,0 +1,88 @@
+@import "../index.scss";
+
+.simpleProject {
+  position: relative;
+  padding: 0 32px;
+}
+
+.simpleProject h3 {
+  margin: 0 0 10px;
+  font-weight: 300;
+  margin-left: 10px;
+}
+
+.simpleProjectsContainer {
+  margin-top: 54px;
+  display: grid;
+  gap: 32px;
+  padding-bottom: 32px;
+}
+
+.simpleProjectImgContainer {
+  position: relative;
+  overflow: hidden;
+  border-radius: 32px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.simpleProject img {
+  width: 100%;
+  filter: brightness(30%);
+  border-radius: 32px;
+}
+
+.simpleProjectIconContainer {
+  width: 100%;
+  position: absolute;
+  top: 58%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  z-index: 1;
+}
+
+.simpleProjectIcon {
+  font-size: 2rem;
+  color: $bordersColor;
+  cursor: pointer;
+  transition: 200ms;
+}
+
+.simpleProjectIcon:hover {
+  color: white;
+  transform: scale(1.2);
+}
+
+@media (min-width: 380px) {
+  .simpleProjectIconContainer {
+    gap: 62px;
+  }
+  .simpleProjectIcon {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .simpleProjectsContainer {
+    padding: 0 2rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 50px;
+  }
+
+  .simpleProject img {
+    transition: 200ms;
+  }
+
+  .simpleProject img:hover {
+    transform: scale(1.3);
+  }
+}
+
+@media (min-width: 1150px) {
+  .simpleProjectsContainer {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

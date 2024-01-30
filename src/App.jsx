@@ -3,7 +3,8 @@ import { AnimatedBackground } from './components/Home/AnimatedBackground'
 import { Header } from "./components/Header/Header";
 import { Main } from "./components/Home/Main";
 import { About } from './components/About/About';
-import { Projects } from './components/Projects/Projects';
+import { PrincipalProjects } from './components/Projects/PrincipalProjects';
+import { SecondaryProjects } from './components/SecondaryProjects/SecondaryProjects';
 import { Contact } from './components/Contact/Contact';
 import { Footer } from './components/Footer/Footer';
 
@@ -32,7 +33,8 @@ export function App() {
       <Header />
       <Main />
       <About />
-      <Projects />
+      <PrincipalProjects />
+      <SecondaryProjects />
       <Contact />
       <Footer />
     </>

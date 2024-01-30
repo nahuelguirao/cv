@@ -3,7 +3,7 @@
 .projectsSection {
   user-select: none;
   width: 80%;
-  margin: 0 auto;
+  margin: 100px auto;
   border-radius: 3rem 1rem;
   background-color: $secondaryColor;
   position: relative;
@@ -71,23 +71,29 @@
 
 .linksContainer svg:hover {
   transform: scale(1.1);
-  color: $activeLink;
+  color: $bordersColor;
 }
 
-.principalProject img {
+.projectImgContainer {
   cursor: pointer;
+  overflow: hidden;
   margin: 0 auto;
-  max-width: 800px;
-  width: 100%;
   border-radius: 32px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   filter: brightness(80%);
   grid-area: img;
-  transition: 200ms;
 }
 
-.principalProject img:hover {
-  transform: scale(1.02);
+.projectImgContainer img {
+  width: 100%;
+  max-width: 800px;
+  width: 100%;
+  border-radius: 32px;
+  transition: 500ms;
+}
+
+.projectImgContainer:hover img {
+  transform: scale(1.2);
 }
 
 @media (min-width: 768px) {

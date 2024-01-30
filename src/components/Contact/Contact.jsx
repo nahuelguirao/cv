@@ -16,7 +16,7 @@ export function Contact() {
         <section className="contactSection">
             <motion.div
                 className="contactSectionContainer"
-                whileInView={{ opacity: [0, 1], x: [-100, 0] }}
+                whileInView={{ x: [100, 0] }}
                 viewport={{ once: true }}
                 transition={{ duration: .6 }}
             >
