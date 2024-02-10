@@ -10,8 +10,8 @@ export function TradingNahuel() {
                 <img src='/ProjectsImg/TradingNahuel.png' alt='project image' />
             </div>
             <div className="simpleProjectIconContainer">
-                <FaGithub className="simpleProjectIcon" />
-                <RiLiveFill className="simpleProjectIcon" />
+                <a href="https://github.com/nahuelguirao/trading_nahuel" target='blank'><FaGithub className="simpleProjectIcon" /></a>
+                <a href="https://nahuel-trading.netlify.app/" target='blank'><RiLiveFill className="simpleProjectIcon" /></a>
             </div>
         </article>
     )

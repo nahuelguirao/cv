@@ -18,10 +18,10 @@ export function SecondaryProjects() {
                 {translations.title}<span className='fit'>{translations.simpler}</span> {translations.projects}<span className='liveSpan dot'>.</span>
             </motion.h1>
             <div className='simpleProjectsContainer'>
+                <WeatherApp />
+                <TicTacToe />
                 <PokeWiki />
                 <TradingNahuel />
-                <TicTacToe />
-                <WeatherApp />
             </div>
         </motion.section>
     )

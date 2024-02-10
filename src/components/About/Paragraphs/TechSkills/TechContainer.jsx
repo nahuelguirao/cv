@@ -1,7 +1,7 @@
 import { motion, AnimatePresence } from 'framer-motion'
 import { IoLogoCss3, IoLogoJavascript } from "react-icons/io5";
-import { SiTypescript, SiDjango } from "react-icons/si";
-import { FaReact, FaPython, FaHtml5, FaGit } from "react-icons/fa";
+import { SiTypescript, SiExpress } from "react-icons/si";
+import { FaReact, FaNodeJs, FaHtml5, FaGit } from "react-icons/fa";
 
 export function TechContainer({ paragrapshOpen }) {
     return (
@@ -18,7 +18,7 @@ export function TechContainer({ paragrapshOpen }) {
                         whileInView={{ scale: [0, 1.2, 1] }}
                         viewport={{ once: true }}
                     >
-                        <FaHtml5 className="html" />
+                        <FaHtml5 />
                         <p className="techParagraph">HTML</p>
                     </motion.div>
                     <motion.div
@@ -26,7 +26,7 @@ export function TechContainer({ paragrapshOpen }) {
                         whileInView={{ scale: [0, 1.2, 1] }}
                         viewport={{ once: true }}
                     >
-                        <IoLogoCss3 className="css" />
+                        <IoLogoCss3 />
                         <p className="techParagraph">CSS</p>
                     </motion.div>
                     <motion.div
@@ -34,7 +34,7 @@ export function TechContainer({ paragrapshOpen }) {
                         whileInView={{ scale: [0, 1.2, 1] }}
                         viewport={{ once: true }}
                     >
-                        <IoLogoJavascript className="js" />
+                        <IoLogoJavascript />
                         <p className="techParagraph">JS</p>
                     </motion.div>
                     <motion.div
@@ -42,7 +42,7 @@ export function TechContainer({ paragrapshOpen }) {
                         whileInView={{ scale: [0, 1.2, 1] }}
                         viewport={{ once: true }}
                     >
-                        <SiTypescript className="typeScript" />
+                        <SiTypescript />
                         <p className="techParagraph">TypeScript</p>
                     </motion.div>
                     <motion.div
@@ -50,7 +50,7 @@ export function TechContainer({ paragrapshOpen }) {
                         whileInView={{ scale: [0, 1.2, 1] }}
                         viewport={{ once: true }}
                     >
-                        <FaReact className="react" />
+                        <FaReact />
                         <p className="techParagraph">React JS</p>
                     </motion.div>
                     <motion.div
@@ -58,16 +58,16 @@ export function TechContainer({ paragrapshOpen }) {
                         whileInView={{ scale: [0, 1.2, 1] }}
                         viewport={{ once: true }}
                     >
-                        <FaPython className="python" />
-                        <p className="techParagraph">Python</p>
+                        <FaNodeJs />
+                        <p className="techParagraph">Node JS</p>
                     </motion.div>
                     <motion.div
                         className="aboutTech"
                         whileInView={{ scale: [0, 1.2, 1] }}
                         viewport={{ once: true }}
                     >
-                        < SiDjango className="django" />
-                        <p className="techParagraph">Django</p>
+                        < SiExpress />
+                        <p className="techParagraph">Express</p>
                     </motion.div>
 
                     <motion.div

@@ -2,7 +2,7 @@ const mainTranslations = {
     es: {
         hi: 'Hola',
         im: ' soy ',
-        animatedText: ['Desarrollador junior.', 'Desarrollador React.', 'Estudiante.', 'Desarrollador Django.', 'Argentino.'],
+        animatedText: ['Desarrollador junior.', 'Desarrollador React.', 'Estudiante.', 'Argentino.', 'Desarrollador web.'],
         my: 'Mis',
         stack: ' conocimientos',
         more: 'Y más!',
@@ -12,7 +12,7 @@ const mainTranslations = {
     en: {
         hi: 'Hi',
         im: " I'm ",
-        animatedText: ['Junior developer.', 'React Developer.', 'Student.', 'Django Developer.', 'Argentinian.'],
+        animatedText: ['Junior developer.', 'React Developer.', 'Student.', 'Argentinian.', 'Web developer.'],
         my: 'My',
         stack: ' stack',
         more: 'And more!',

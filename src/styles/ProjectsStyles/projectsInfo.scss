@@ -1,0 +1,120 @@
+@import "../index.scss";
+
+.prinicpalProjectDiv {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+}
+
+.principalProjectInfoSection {
+  width: 80%;
+  margin: 50px auto 25px;
+  background-color: $secondaryColor;
+  position: relative;
+  border-radius: 16px;
+  user-select: none;
+}
+
+.allDataContainer {
+  padding: 10px 20px;
+}
+
+.specificProjectHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid $bordersColor;
+}
+
+.specificProjectHeader h1 {
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+.linksSpecificProject {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  font-size: 2rem;
+}
+
+.linksSpecificProject a {
+  color: $unactiveLink;
+  transition: 200ms;
+}
+
+.linksSpecificProject a:hover {
+  color: $bordersColor;
+  scale: 1.2;
+}
+
+.description a {
+  color: $bordersColor;
+}
+
+.projectDescription {
+  color: $paragraphColor;
+  font-weight: 500;
+  text-wrap: pretty;
+}
+
+.usedTechnologiesContainer {
+  text-align: center;
+}
+
+.usedTechnologiesContainer h3 {
+  margin: 32px 0 10px;
+}
+
+.usedTechnologies {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 16px;
+  justify-content: center;
+}
+
+.usedTechnologies p {
+  border: 1px solid $bordersColor;
+  padding: 2px 5px;
+}
+
+.gallery {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+@media (min-width: 1000px) {
+  .allDataContainer {
+    padding: 20px 40px;
+    display: grid;
+    grid-template-areas:
+      "header  header header"
+      "description  gallery gallery";
+    gap: 32px;
+  }
+
+  .specificProjectHeader {
+    grid-area: header;
+  }
+
+  .description {
+    grid-area: description;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .gallery {
+    grid-column: gallery;
+    align-self: center;
+    max-width: 800px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .projectDescription {
+    font-size: 1.2rem;
+  }
+}

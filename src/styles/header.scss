@@ -63,6 +63,26 @@ header h2 {
   display: none;
 }
 
+.specificHeader {
+  position: relative;
+}
+
+.navbarSpecific a {
+  margin-right: 30px;
+  padding: 5px;
+  border-radius: 100vmax;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: $bordersColor;
+  transition: 200ms;
+}
+
+.navbarSpecific a:hover {
+  background-color: rgba(0, 0, 0, 0.432);
+  color: $bordersColor;
+}
+
 @media (min-width: 768px) {
   header {
     padding: 0.5rem 2.5rem;

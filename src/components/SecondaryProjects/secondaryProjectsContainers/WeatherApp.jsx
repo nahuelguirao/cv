@@ -10,8 +10,8 @@ export function WeatherApp() {
                 <img src='/ProjectsImg/weatherApp.png' alt='project image' />
             </div>
             <div className="simpleProjectIconContainer">
-                <FaGithub className="simpleProjectIcon" />
-                <RiLiveFill className="simpleProjectIcon" />
+                <a href="https://github.com/nahuelguirao/weather-app-react" target='blank'><FaGithub className="simpleProjectIcon" /></a>
+                <a href="https://liveclima.netlify.app/" target='blank'><RiLiveFill className="simpleProjectIcon" /></a>
             </div>
         </article>
     )

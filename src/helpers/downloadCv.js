@@ -1,8 +1,9 @@
-export async function downloadCv() {
-    const CV_URL = '/assets/GuiraoNahuelCV.pdf'
+export async function downloadCv(language) {
+    const CV_URL_ES = '/assets/GuiraoNahuelCV.pdf'
+    const CV_URL_EN = '/assets/GuiraoNahuelCVen.pdf'
 
     try {
-        const response = await fetch(CV_URL);
+        const response = await fetch(language == 'es' ? CV_URL_ES : CV_URL_EN);
         const blob = await response.blob();
         const url = window.URL.createObjectURL(new Blob([blob]));
         const link = document.createElement('a');

@@ -10,8 +10,8 @@ export function PokeWiki() {
                 <img src='/ProjectsImg/pokeWiki.png' alt='project image' />
             </div>
             <div className="simpleProjectIconContainer">
-                <FaGithub className="simpleProjectIcon" />
-                <RiLiveFill className="simpleProjectIcon" />
+                <a href="https://github.com/nahuelguirao/poke-wiki" target='blank'><FaGithub className="simpleProjectIcon" /></a>
+                <a href="https://npoke-wiki.netlify.app/" target='blank'><RiLiveFill className="simpleProjectIcon" /></a>
             </div>
         </article>
     )

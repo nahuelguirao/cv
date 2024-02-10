@@ -8,7 +8,7 @@ export function ContactGmail() {
                 <a href="mailto:nahuelguirao2@gmail.com"><CgMail className="contactIcon" /></a>
             </motion.div>
             <motion.p whileInView={{ scale: [0, 1] }} viewport={{ once: true }}>
-                nahuelguirao2@gmail.com
+                nahuelguirao123@gmail.com
             </motion.p>
         </div>
     )
