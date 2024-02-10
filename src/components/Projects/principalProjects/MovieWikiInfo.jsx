@@ -12,22 +12,19 @@ import { movieWikiTranslations } from "../../../translations/movieWikiTranslatio
 export function MovieWikiInfo() {
     const images = [
         {
-            original: "/movieWikiImgs/movieWiki2.PNG",
+            original: "/movieWikiImgs/movieWiki2.png",
         },
         {
-            original: "/movieWikiImgs/movieWiki3.PNG",
+            original: "/movieWikiImgs/movieWiki3.png",
         },
         {
-            original: "/movieWikiImgs/movieWiki4.PNG",
+            original: "/movieWikiImgs/movieWiki4.png",
         },
         {
-            original: "/movieWikiImgs/movieWiki5.PNG",
+            original: "/movieWikiImgs/movieWiki5.png",
         },
         {
-            original: "/movieWikiImgs/movieWiki6.PNG",
-        },
-        {
-            original: "/movieWikiImgs/movieWiki7.PNG",
+            original: "/movieWikiImgs/movieWiki7.png",
         },
     ];
 
@@ -37,7 +34,7 @@ export function MovieWikiInfo() {
         <>
             <SpecificNavbar />
             <div className="prinicpalProjectDiv">
-                <motion.section className="principalProjectInfoSection" animate={{ scale: [0, 1] }}>
+                <motion.section className="principalProjectInfoSection" animate={{ opacity: [0, 1] }} transition={{ duration: .5 }}>
                     <div className="allDataContainer">
                         <div className="specificProjectHeader">
                             <h1>Movie Wiki</h1>
@@ -59,7 +56,7 @@ export function MovieWikiInfo() {
                             </div>
                         </div>
                         <div className="gallery">
-                            <ImageGallery items={images} autoPlay={true} />
+                            <ImageGallery items={images} />
                         </div>
                     </div>
                 </motion.section>

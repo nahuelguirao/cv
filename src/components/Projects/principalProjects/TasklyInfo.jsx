@@ -15,16 +15,16 @@ export function TasklyInfo() {
             original: "/ProjectsImg/Taskly.png",
         },
         {
-            original: "/public/TasklyImgs/Taskly1.PNG",
+            original: "/TasklyImgs/Taskly1.png",
         },
         {
-            original: "/public/TasklyImgs/Taskly2.PNG",
+            original: "/TasklyImgs/Taskly2.png",
         },
         {
-            original: "/public/TasklyImgs/Taskly3.PNG",
+            original: "/TasklyImgs/Taskly3.png",
         },
         {
-            original: "/public/TasklyImgs/Taskly4.PNG",
+            original: "/TasklyImgs/Taskly4.png",
         },
     ];
 
@@ -35,7 +35,7 @@ export function TasklyInfo() {
         <>
             <SpecificNavbar />
             <div className="prinicpalProjectDiv">
-                <motion.section className="principalProjectInfoSection" animate={{ scale: [0, 1] }}>
+                <motion.section className="principalProjectInfoSection" animate={{ opacity: [0, 1] }} transition={{ duration: .5 }}>
                     <div className="allDataContainer">
                         <div className="specificProjectHeader">
                             <h1>Taskly</h1>
@@ -63,7 +63,7 @@ export function TasklyInfo() {
                             </div>
                         </div>
                         <div className="gallery">
-                            <ImageGallery items={images} autoPlay={true} />
+                            <ImageGallery items={images} />
                         </div>
                     </div>
                 </motion.section>
