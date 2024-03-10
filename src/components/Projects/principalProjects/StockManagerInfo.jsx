@@ -1,35 +1,34 @@
+import { useContext } from "react";
 import { SpecificNavbar } from "../../Header/SpecificNavbar/SpecificNavbar";
-import ImageGallery from "react-image-gallery";
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 import { FaGithub } from "react-icons/fa";
 import { RiLiveFill } from "react-icons/ri";
-import { useContext } from "react";
+import ImageGallery from "react-image-gallery";
 import { LanguageContext } from "../../../context/LanguageContext";
-import { movieWikiTranslations } from "../../../translations/movieWikiTranslations";
-import '../../../styles/ProjectsStyles/projectsInfo.scss';
-import '../../../styles/ProjectsStyles/galerry.scss'
+import { stockManagerTranslations } from "../../../translations/stockManagerTranslations";
 
-export function MovieWikiInfo() {
+export function StockManagerInfo() {
     const images = [
         {
-            original: "/movieWikiImgs/movieWiki2.png",
+            original: "/stockManagerImgs/stockManager.PNG",
         },
         {
-            original: "/movieWikiImgs/movieWiki3.png",
+            original: "/stockManagerImgs/stockManager2.PNG",
         },
         {
-            original: "/movieWikiImgs/movieWiki4.png",
+            original: "/stockManagerImgs/stockManager3.PNG",
         },
         {
-            original: "/movieWikiImgs/movieWiki5.png",
+            original: "/stockManagerImgs/stockManager4.PNG",
         },
         {
-            original: "/movieWikiImgs/movieWiki7.png",
+            original: "/stockManagerImgs/stockManager5.PNG",
         },
     ];
 
     const { language } = useContext(LanguageContext)
-    const translations = movieWikiTranslations[language]
+    const translations = stockManagerTranslations[language]
+
     return (
         <>
             <SpecificNavbar />
@@ -37,10 +36,10 @@ export function MovieWikiInfo() {
                 <motion.section className="principalProjectInfoSection" animate={{ opacity: [0, 1] }} transition={{ duration: .5 }}>
                     <div className="allDataContainer">
                         <div className="specificProjectHeader">
-                            <h1>Movie Wiki</h1>
+                            <h1>Stock Manager</h1>
                             <div className='linksSpecificProject'>
-                                <a target="blank" href="https://github.com/nahuelguirao/MovieAppReact"><FaGithub /></a>
-                                <a target="blank" href="https://wiki-movie-react.netlify.app/"><RiLiveFill /></a>
+                                <a target="blank" href="https://github.com/nahuelguirao/gestor-stock"><FaGithub /></a>
+                                <a target="blank" href="https://stock-manager-ng.netlify.app/"><RiLiveFill /></a>
                             </div>
                         </div>
                         <div className="description">
@@ -52,6 +51,11 @@ export function MovieWikiInfo() {
                                 <div className="usedTechnologies">
                                     <p>CSS</p>
                                     <p>React</p>
+                                    <p>TypeScript</p>
+                                    <p>Express JS</p>
+                                    <p>Postgre SQL</p>
+                                    <p>GIT</p>
+                                    <p>Vercel</p>
                                 </div>
                             </div>
                         </div>
