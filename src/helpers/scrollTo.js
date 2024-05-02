@@ -63,25 +63,11 @@ export function scrollToSomewhere() {
                 behavior: 'smooth'
             })
         }
-
-
-        //     if (window.innerWidth >= 768 && window.innerWidth <= 1000) {
-        //         window.scrollTo({
-        //             top: 2061,
-        //             behavior: 'smooth'
-        //         })
-        //     } else 
-        //     else {
-        //     window.scrollTo({
-        //         top: 1750,
-        //         behavior: 'smooth'
-        //     })
-        // }
     }
 
     const scrollToContact = () => {
         window.scrollTo({
-            top: 4170,
+            top: 6000,
             behavior: 'smooth'
         })
     }
