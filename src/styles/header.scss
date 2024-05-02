@@ -126,6 +126,12 @@ header h2 {
   }
 }
 
+@media (min-width: 1300px) {
+  header {
+    margin-bottom: 20px;
+  }
+}
+
 @keyframes fadeInAnchor {
   from {
     transform: scaleY(0);

@@ -112,6 +112,11 @@
 }
 
 @media (min-width: 1310px) {
+  main {
+    margin-top: -50px;
+    height: 92.5vh;
+  }
+
   .buttonsContainerGeneral {
     margin-top: -5rem;
     display: flex;
