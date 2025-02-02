@@ -1,35 +1,45 @@
+import { useContext } from "react";
+import { LanguageContext } from "../../../context/LanguageContext";
+import { tasklyTranslations } from "../../../translations/tasklyTranslations";
 import { SpecificNavbar } from "../../Header/SpecificNavbar/SpecificNavbar";
 import ImageGallery from "react-image-gallery";
 import { motion } from "framer-motion";
 import { FaGithub } from "react-icons/fa";
 import { RiLiveFill } from "react-icons/ri";
-import { useContext } from "react";
-import { LanguageContext } from "../../../context/LanguageContext";
-import { movieWikiTranslations } from "../../../translations/movieWikiTranslations";
 import "../../../styles/ProjectsStyles/projectsInfo.scss";
 import "../../../styles/ProjectsStyles/galerry.scss";
 
-export function MovieWikiInfo() {
+export function TodoBusInfo() {
   const images = [
     {
-      original: "/movieWikiImgs/movieWiki2.png",
+      original: "/ProjectsImg/todobus1.png",
     },
     {
-      original: "/movieWikiImgs/movieWiki3.png",
+      original: "/TasklyImgs/todobus2.PNG",
     },
     {
-      original: "/movieWikiImgs/movieWiki4.png",
+      original: "/TasklyImgs/todobus3.PNG",
     },
     {
-      original: "/movieWikiImgs/movieWiki5.png",
+      original: "/TasklyImgs/todobus4.PNG",
     },
     {
-      original: "/movieWikiImgs/movieWiki7.png",
+      original: "/TasklyImgs/todobus5.PNG",
+    },
+    {
+      original: "/TasklyImgs/todobus6.PNG",
+    },
+    {
+      original: "/TasklyImgs/todobus7.PNG",
+    },
+    {
+      original: "/TasklyImgs/todobus8.PNG",
     },
   ];
 
   const { language } = useContext(LanguageContext);
-  const translations = movieWikiTranslations[language];
+  const translations = tasklyTranslations[language];
+
   return (
     <>
       <SpecificNavbar />
@@ -41,23 +51,24 @@ export function MovieWikiInfo() {
         >
           <div className="allDataContainer">
             <div className="specificProjectHeader">
-              <h1>Movie Wiki</h1>
+              <h1>TodoBus</h1>
               <div className="linksSpecificProject">
-                <a target="blank" href="https://github.com/nahuelguirao/MovieAppReact">
-                  <FaGithub />
-                </a>
-                <a target="blank" href="https://wiki-movie-react.netlify.app/">
+                <a target="blank" href="https://todobus.cl/">
                   <RiLiveFill />
                 </a>
               </div>
             </div>
             <div className="description">
               <p className="projectDescription">{translations.description}</p>
+
               <div className="usedTechnologiesContainer">
                 <h3>{translations.technologies}</h3>
                 <div className="usedTechnologies">
-                  <p>CSS</p>
-                  <p>React</p>
+                  <p>Next JS</p>
+                  <p>Postgres SQL</p>
+                  <p>Cloudinary</p>
+                  <p>Vercel</p>
+                  <p>Express JS</p>
                 </div>
               </div>
             </div>

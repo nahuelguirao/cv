@@ -82,7 +82,9 @@
 
 .gallery {
   max-width: 600px;
-  margin: 0 auto;
+  margin: 10px auto;
+  display: flex;
+  align-items: center;
 }
 
 @media (min-width: 1000px) {
@@ -110,6 +112,7 @@
     grid-column: gallery;
     align-self: center;
     max-width: 800px;
+    height: 400px;
   }
 }
 
